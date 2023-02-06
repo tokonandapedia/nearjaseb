@@ -1,7 +1,7 @@
 FROM greycilik/cilikuserbot:buster
 
 RUN git clone -b main https://github.com/tokonandapedia/nearjaseb /home/nearjaseb/ \
-    && chmod 777 /home/ubot-telethon \
+    && chmod 777 /home/nearjaseb \
     && mkdir /home/nearjaseb/bin/
 
 COPY ./sample_config.env ./config.env* /home/nearjaseb/
